@@ -1,0 +1,133 @@
+body {
+	max-width: 100vw;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	text-transform:uppercase;
+	overflow-x: hidden;
+}
+.daymode div{
+	background-color: white; 
+	color: black;
+}
+
+.nightmode div{
+	background-color: rgb(31,31,31); 
+	color: rgb(199,199,199);
+}
+.history_box {
+	width: 100%;
+	
+}
+
+.bar {
+	background-color: lightgreen;
+	width: 0px;
+	transition-duration: 1.5s;
+	color: black;
+	
+	text-align:right;
+	justify-items: center;
+	height: auto;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	min-height: 2em;
+}
+.bar p {
+	margin-top: 10px;
+	font-size: 30px;
+	margin-bottom: 10px;
+	animation-name: "fadeIn";
+	animation-duration: 2s;
+}
+
+.totals {
+	width: 100%;
+	background-color: rgb(180, 255, 255);
+	height: 100px;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#wins {font-size: x-large;
+	color: rgb(36, 36, 36);
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 20px;
+}
+
+#total {
+	font-size: large;
+	color: rgb(68, 68, 68);
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 20px;
+}
+
+#rate {
+	font-size: 3em;
+	margin-top: -3px;
+	color: white;
+	text-shadow: 0px 1px 1px black;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+#ratebar {
+	width: 400px;
+	height: 3em;
+	background-color: gray;
+	display: block;
+	margin: auto;
+	border-radius: 10px;
+	border: 2px inset rgb(161, 161, 161);
+	box-shadow: inset 10px 10px 40px 10px rgba(0, 0, 0, 0.5);
+}
+#ratebarfill {
+	width: 0px;
+	height: 3em;
+	position: absolute;
+	border-radius: 8px;
+	background-color: #51ad49;
+	outline: 2px outset rgb(8, 173, 8);
+	outline-offset: -1px;
+}
+
+#graphbox {
+	background-color: rgba(131, 125, 125, 0.384);
+	padding: 5px 0px 30px 10px;
+	border-radius: 10px;
+}
+#graphbox h2 {
+	margin-top: 5px;
+	text-shadow: 0px 0px 3px white;
+
+}
+
+.bar-item {
+	position: relative;
+	height: 2em;
+}
+.attempt {
+	font-size: medium !important;
+	position: absolute;
+	height: 2em;
+}
+#copyright {
+		font-size: medium;
+		text-wrap: wrap;
+		text-transform: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255, 0.61);
+	text-align: center;
+	padding: 5px;
+}
+@keyframes fadeIn {
+	0% { opacity: 0; visibility: visible;}
+	25% { opacity: 0;}
+	100% { opacity: 1; }
+}
+
